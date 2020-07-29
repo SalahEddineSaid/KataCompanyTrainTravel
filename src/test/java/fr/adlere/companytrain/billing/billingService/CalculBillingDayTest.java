@@ -154,7 +154,7 @@ public class CalculBillingDayTest {
         customerSummary.setTotalCostInCents(500);
         customerSummary.setTrips(Arrays.asList(
                 new Trip(Station.A,Station.I,41,300,1,4),
-                new Trip(Station.E,Station.F,70,200,3,4)
+                new Trip(Station.E,Station.F,70,200,3,3)
         ));
 
         customerSummaries.add(customerSummary);

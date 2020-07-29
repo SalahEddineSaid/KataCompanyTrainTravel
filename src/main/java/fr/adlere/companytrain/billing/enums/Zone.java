@@ -1,9 +1,6 @@
 package fr.adlere.companytrain.billing.enums;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public enum Zone {
 
@@ -47,8 +44,10 @@ public enum Zone {
             });
         }
 
-        // System.out.println("Station from =>" + from + " Zone From " + mapZonesFirst.getKey() + " ==> " + mapZonesFirst.getValue().get(0));
-       // System.out.println("Station to  =>" + to + " Zone to " + mapZonesFirst.getKey() + " ==> " + mapZonesFirst.getValue().get(1));
+        if(mapZoneLower.firstEntry().getValue().get(0)==3 && mapZoneLower.firstEntry().getValue().get(1)==4 ){
+            mapZoneLower.replace(mapZoneLower.firstKey(),Arrays.asList(3,3));
+        };
+
         return mapZoneLower.firstEntry();
     }
 
